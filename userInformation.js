@@ -64,7 +64,7 @@ function renderUserInformation(userInformation) {
     userInfoElement.innerHTML = html;
     userInfoElement.classList.add("user-information-visible");
   } else {
-    userInfoElement.innerHTML = "Vartotojas dar nėra užpildęs informacijos";
+    userInfoElement.innerHTML = "User did not write required information!";
   }
 }
 
