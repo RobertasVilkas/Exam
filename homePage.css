@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#add-user-info {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.delete-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#delete-column {
+  display: none;
+}
+
+table {
+  margin-left: 26px;
+}
+
+tr.account-row {
+  background-color: #f2f2f2;
+}
+
+tr.account-row:hover {
+  background-color: #e2e2e2;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  background-color: #007bff;
+  color: white;
+}
+nav {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 26px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
