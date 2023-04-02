@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="add-user-info.css" />
+    <title>Naudotojo Informacija</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="./userInformation.html">Personal information</a>
+        </li>
+        <li>
+          <a href="./login.html">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <form id="add-user-form">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="surname">Surname:</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="personal-code">Personal code:</label>
+        <input
+          type="text"
+          id="personal-code"
+          name="personalCode"
+          pattern="[0-9]{11}"
+          title="Įveskite 11 skaičių."
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="telephone-number">Telephone number:</label>
+        <input
+          type="text"
+          id="telephone-number"
+          name="telephoneNumber"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          name="address[city]"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="street">Street:</label>
+        <input
+          type="text"
+          id="street"
+          name="address[street]"
+          required
+          placeholder="Būtina užpildyti"
+        />
+      </div>
+      <div>
+        <label for="house-number">House number:</label>
+        <input
+          type="text"
+          id="house-number"
+          name="address[houseNumber]"
+          placeholder="Būtina užpildyti"
+          required
+        />
+      </div>
+      <div>
+        <label for="flat-number">Apartments number:</label>
+        <input
+          type="text"
+          id="flat-number"
+          name="address[flatNumber]"
+          title="0"
+        />
+      </div>
+      <button type="submit">Confirmed!</button>
+    </form>
+    <div id="success-message" style="display: none">
+      Your personal information has been updated!
+    </div>
+  </body>
+  <script src="./add-user-info.js"></script>
+</html>
