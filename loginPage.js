@@ -7,16 +7,19 @@ form.addEventListener("submit", async e => {
   const name = username.value;
   const pwd = password.value;
   try {
-    const response = await fetch("https://localhost:5104/api/Accounts/Login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        userName: name,
-        password: pwd
-      })
-    });
+    const response = await fetch(
+      "https://localhost:5104/api/UserAccounts/Login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          userName: name,
+          password: pwd
+        })
+      }
+    );
 
     if (response.ok) {
       const data = await response.text();
