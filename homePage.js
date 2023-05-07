@@ -43,7 +43,7 @@ getRole();
 async function fetchAccounts() {
   try {
     const response = await fetch(
-      "https://localhost:7112/api/get-all-accounts",
+      "https://localhost:5104/api/get-all-accounts",
       {
         headers: {
           Authorization: `Bearer ${getCookie("token")}`
@@ -76,7 +76,7 @@ async function fetchAccounts() {
           deleteButton.addEventListener("click", async () => {
             try {
               const response = await fetch(
-                `https://localhost:7112/api/accounts/${account.id}`,
+                `https://localhost:5104/api/accounts/${account.id}`,
                 {
                   method: "DELETE",
                   headers: {

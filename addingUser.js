@@ -34,7 +34,7 @@ form.addEventListener("submit", async event => {
     const token = getCookie("token");
 
     const response = await fetch(
-      "https://localhost:7112/api/update-user-information",
+      "https://localhost:5104/api/update-user-information",
       {
         method: "PUT",
         headers: {

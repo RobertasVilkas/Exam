@@ -15,7 +15,7 @@ const errorContainer = document.getElementById("error-container");
 async function getUserInformation() {
   try {
     const response = await fetch(
-      "https://localhost:7112/api/user-information",
+      "https://localhost:5104/api/user-information",
       {
         headers: {
           Authorization: `Bearer ${getCookie("token")}`
